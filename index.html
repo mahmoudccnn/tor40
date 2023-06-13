@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Open Link Three Times</title>
+	<style>
+		input[type="text"] {
+			width: 300px;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+		input[type="button"] {
+			padding: 10px 20px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Open Link Three Times</h1>
+	<p>Enter the link you want to open:</p>
+	<input type="text" id="url" placeholder="Enter URL">
+	<input type="button" value="Open" onclick="openLink()">
+	<script>
+		function openLink() {
+			var url = document.getElementById('url').value;
+			for (var i = 0; i < 40; i++) {
+				window.open(url);
+			}
+		}
+	</script>
+</body>
+</html>
